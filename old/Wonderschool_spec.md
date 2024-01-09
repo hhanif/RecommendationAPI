@@ -128,6 +128,7 @@ Endpoint: /calculate
 Request Data Type: JSON
 Response Data Type: JSON
 Request:
+```json
 {
   "farmId": "123",
   "farmName": "Sample Farm",
@@ -162,8 +163,10 @@ Request:
     "fuel": 3000
   }
 }
+```
 
 Response:
+```json
 {
   "carbonEmissions": {
     "total": 1500,  // Total carbon emissions in kgCO2e
@@ -198,6 +201,7 @@ Response:
     "energyEfficiency": "Upgrade to energy-efficient equipment"
   }
 }
+```
 
 
 
@@ -208,6 +212,7 @@ Endpoint: /recommend
 Request Data Type: JSON
 Response Data Type: JSON
 Request:
+```json
 {
   "farmId": "12345",
   "cropRotation": true,
@@ -237,9 +242,11 @@ Request:
     "Upgrade equipment to improve efficiency"
   ]
 }
+```
 
 
 Response:
+```json
 {
   "recommendations": [
     {
@@ -271,3 +278,4 @@ Response:
     }
   ]
 }
+```
